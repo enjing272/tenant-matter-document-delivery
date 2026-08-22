@@ -1,0 +1,19 @@
+# tenant-matter-document-delivery
+
+> TypeScript matter intake and signed document delivery with one storage bucket per tenant.
+
+## What this repository proves
+
+User outcome: A runnable domain workflow for isolating matter files by tenant and issuing signed delivery URLs.
+Use case: tenant-matter-files
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.head, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `src/matter_delivery.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

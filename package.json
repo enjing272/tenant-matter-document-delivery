@@ -1,0 +1,10 @@
+{
+  "name": "tenant-matter-document-delivery",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/matter_delivery.ts",
+    "test": "node --experimental-strip-types --test src/matter_delivery.test.ts"
+  }
+}
